@@ -1,6 +1,37 @@
-## Getting Started
+## Slide Films
+<br>
+### 1. Clonar repositório
+Você pode clonar esse repositório utilizando o comando:
 
-O app foi desenvolvido utilizando como principais tecnologias: NodeJS, NextJS e TailwindCSS;
+```bash
+$ git clone https://github.com/matheusv-dev/slide-films
+```
+ou você pode baixar o repositório como um arquivo .ZIP
+
+### 2. Instalar as dependências
+
+Após isso, na pasta do projeto rode o comando
+
+```bash
+$ npm install
+```
+para instalar todas as dependencias do projeto. <br>
+
+### 3. Rodar a aplicação
+
+Após a instalação das dependências, vamos utilizar o comando para executar a aplicação:
+
+```bash
+$ npm run dev
+# ou
+$ yarn dev
+```
+
+## Ferramentas utilizadas
+
+<li>ReactJS</li>
+<li>TypeScript</li>
+<li>TailwindCSS</li>
 
 ### Base de pesquisa: 
 

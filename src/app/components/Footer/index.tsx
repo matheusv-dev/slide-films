@@ -25,9 +25,15 @@ export const Footer = () => {
             <a href="/">Privacy Policy</a>
           </div>
           <div className="flex gap-2">
-            <FaFacebook size={24} />
-            <FaTwitter size={24} />
-            <FaInstagram size={24} />
+            <Link href={'https://facebook.com'} target="_blank">
+              <FaFacebook size={24} />
+            </Link>
+            <Link href={'https://twitter.com'} target="_blank">
+              <FaTwitter size={24} />
+            </Link>
+            <Link href={'https://instagram.com'} target="_blank">
+              <FaInstagram size={24} />
+            </Link>
           </div>
         </nav>
       </div>

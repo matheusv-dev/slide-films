@@ -37,7 +37,6 @@ export default function HomeContent() {
   async function fetchRecords() {
     try {
       const response = await getData(15, currentPage)
-      console.log(response)
       setRecords(response)
       setSlides(response.data.slice(0, 3))
       setCards(response.data.slice(3))
@@ -45,8 +44,6 @@ export default function HomeContent() {
       console.error('error to get ', err)
     }
   }
-
-  console.log(router)
 
   useEffect(() => {
     fetchRecords()

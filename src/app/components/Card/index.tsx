@@ -19,14 +19,14 @@ export default function Card({
 }: CardProps) {
   return (
     <div className="relative flex w-full flex-col gap-2 overflow-hidden rounded-2xl border bg-gray-100 p-4">
-      <div className="h-[372px]">
-        <img src={image_url} alt={title} className="h-[372px] rounded-2xl" />
+      <div className="md:h-[372px]">
+        <img src={image_url} alt={title} className="rounded-2xl md:h-[372px]" />
       </div>
-      <div className="flex flex-col gap-3 text-black">
+      <div className="flex h-full flex-col gap-3 text-black">
         <h1 className="text-lg font-semibold">{title}</h1>
         <span className="text-sm font-medium">Ano de lançamento: {year}</span>
         <span className="text-sm font-normal">{crew}</span>
-        <span className="flex w-fit items-center gap-2 rounded-2xl bg-[#726BEACC] px-4 py-2">
+        <span className="mt-auto flex w-fit items-center gap-2 rounded-2xl bg-[#726BEACC] px-4 py-2">
           <FaStar /> {rating}
         </span>
       </div>

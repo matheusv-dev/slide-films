@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Header = () => {
   return (
-    <header className="border-primary flex h-[104px] items-center border-b-2 bg-[#FCFCFC] text-xs text-gray-400 backdrop-blur-sm">
+    <header className=" flex h-[104px] items-center bg-[#FCFCFC] text-xs text-gray-400 backdrop-blur-sm">
       <nav className="relative mx-auto flex h-14 w-full max-w-screen-xl flex-row items-center md:sticky ">
         <Link href="/" prefetch={false} className="relative ml-4">
           <Image
@@ -11,7 +11,6 @@ export const Header = () => {
             alt="Logo"
             width={176}
             height={33}
-            style={{ width: 'auto', height: 'auto' }}
             className="bg-transparent text-transparent"
             priority
           />

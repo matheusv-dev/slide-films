@@ -31,7 +31,7 @@ export default function Carousel({ slides }: CarouselProps) {
   }
 
   return (
-    <div className="relative h-[577.2px] w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden md:h-[577.2px]">
       <div
         className="flex w-full transition-transform duration-300 ease-out"
         style={{
@@ -40,7 +40,7 @@ export default function Carousel({ slides }: CarouselProps) {
       >
         {slides.map((s, i) => (
           <div key={i} className="relative w-full shrink-0">
-            <div className="absolute left-[216px] top-[375px] z-10 flex w-[559px] flex-col gap-4 text-white">
+            <div className="absolute left-[50%] top-[50%] z-10 flex w-full translate-x-[-50%] translate-y-[-50%] flex-col gap-4 p-4 text-white md:left-[216px] md:top-[375px] md:w-[559px] md:translate-x-0 md:translate-y-0">
               <h5 className="text-base font-bold">Destaque do Mês</h5>
               <h1 className="text-4xl font-bold">{s.title}</h1>
               <div className="flex items-center gap-4">
